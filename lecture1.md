@@ -49,7 +49,7 @@ From the [bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/ma
 ./semester
 # permission denied: ./semester
 
-ls -l
+ls -l semester
 # -rw-r--r--  1 henrikh  wheel  61 Jan 28 12:53 semester
 ```
 The `x` (execute) bits are missing.
@@ -64,3 +64,14 @@ Source: https://askubuntu.com/a/22948
 > 8\. Look up the `chmod` program (e.g. use `man chmod`).
 
 The `chmod` utility modifies the file mode bits of the listed files as specified by the mode operand. It may also be used to modify the Access Control Lists (ACLs) associated with the listed files.
+
+> 9\. Use `chmod` to make it possible to run the command `./semester` rather than having to type `sh semester`. How does your shell know that the file is supposed to be interpreted using `sh`? See this page on the [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line for more information.
+
+```bash
+chmod +x semester
+
+ls -l semester
+# -rwxr-xr-x  1 henrikh  wheel  61 Jan 28 12:53 semester
+```
+
+`#!/bin/sh` (shebang line) tells the shell to interpret the script using `sh`.
