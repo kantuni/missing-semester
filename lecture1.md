@@ -60,3 +60,7 @@ The `x` (execute) bits are missing.
 - with `./` you're making a shortcut assuming that the script is just right here in the current directory you're sitting in AND it will be executable.
 
 Source: https://askubuntu.com/a/22948
+
+> 8\. Look up the `chmod` program (e.g. use `man chmod`).
+
+The `chmod` utility modifies the file mode bits of the listed files as specified by the mode operand. It may also be used to modify the Access Control Lists (ACLs) associated with the listed files.
