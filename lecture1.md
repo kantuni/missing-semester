@@ -21,3 +21,16 @@ man touch
 cd missing
 touch semester
 ```
+
+5. Write the following into that file, one line at a time:
+
+```bash
+#!/bin/sh  
+curl --head --silent https://missing.csail.mit.edu
+```
+
+```bash
+# Double quotes won't work
+echo '#!/bin/sh' > semester
+echo "curl --head --silent https://missing.csail.mit.edu" >> semester
+```
