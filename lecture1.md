@@ -52,7 +52,7 @@ From the [bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/ma
 ls -l semester
 # -rw-r--r--  1 henrikh  wheel  61 Jan 28 12:53 semester
 ```
-The `x` (execute) bits are missing.
+The script is not executable, as the `x` (execute) bits are missing.
 
 > 7\. Run the command by explicitly starting the `sh` interpreter, and giving it the file `semester` as the first argument, i.e. `sh semester`. Why does this work, while `./semester` didn’t?
 
