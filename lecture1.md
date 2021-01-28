@@ -10,6 +10,8 @@ cd /tmp
 mkdir missing
 ```
 
+<br />
+
 > 3\. Look up the `touch` program. The `man` program is your friend.
 
 ```bash
@@ -18,12 +20,16 @@ man touch
 
 The `touch` utility sets the modification and access times of files.  If any file does not exist, it is created with default permissions.
 
+<br />
+
 > 4\. Use `touch` to create a new file called `semester` in `missing`.
 
 ```bash
 cd missing
 touch semester
 ```
+
+<br />
 
 > 5\. Write the following into that file, one line at a time:
 
@@ -43,6 +49,8 @@ From the [bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/ma
 
 **NOTE:** Use single quotes if there is a `!` inside of a string.
 
+<br />
+
 > 6\. Try to execute the file, i.e. type the path to the script (`./semester`) into your shell and press enter. Understand why it doesn’t work by consulting the output of `ls` (hint: look at the permission bits of the file).
 
 ```bash
@@ -54,6 +62,8 @@ ls -l semester
 ```
 The script is not executable, as the `x` (execute) bits are missing.
 
+<br />
+
 > 7\. Run the command by explicitly starting the `sh` interpreter, and giving it the file `semester` as the first argument, i.e. `sh semester`. Why does this work, while `./semester` didn’t?
 
 - with `sh`, you're running a program that will interpret the lines in your script just as if you would have typed them on the interactive prompt of the terminal. The script doesn't need to be executable.
@@ -61,9 +71,13 @@ The script is not executable, as the `x` (execute) bits are missing.
 
 Source: https://askubuntu.com/a/22948
 
+<br />
+
 > 8\. Look up the `chmod` program (e.g. use `man chmod`).
 
 The `chmod` utility modifies the file mode bits of the listed files as specified by the mode operand. It may also be used to modify the Access Control Lists (ACLs) associated with the listed files.
+
+<br />
 
 > 9\. Use `chmod` to make it possible to run the command `./semester` rather than having to type `sh semester`. How does your shell know that the file is supposed to be interpreted using `sh`? See this page on the [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line for more information.
 
@@ -75,3 +89,5 @@ ls -l semester
 ```
 
 `#!/bin/sh` (shebang line) tells the shell to interpret the script using `sh`.
+
+<br />
