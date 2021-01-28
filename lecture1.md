@@ -56,7 +56,7 @@ The `x` (execute) bits are missing.
 
 > 7\. Run the command by explicitly starting the `sh` interpreter, and giving it the file `semester` as the first argument, i.e. `sh semester`. Why does this work, while `./semester` didn’t?
 
-- with `sh`, you're running a program that will interpret the lines in your script just as if you would have typed them on the interactive prompt of the terminal. The file doesn't need to be executable.
+- with `sh`, you're running a program that will interpret the lines in your script just as if you would have typed them on the interactive prompt of the terminal. The script doesn't need to be executable.
 - with `./` you're making a shortcut assuming that the script is just right here in the current directory you're sitting in AND it will be executable.
 
 Source: https://askubuntu.com/a/22948
