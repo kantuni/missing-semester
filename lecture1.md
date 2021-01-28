@@ -14,3 +14,10 @@ mkdir missing
 ```bash
 man touch
 ```
+
+4. Use `touch` to create a new file called `semester` in `missing`.
+
+```bash
+cd missing
+touch semester
+```
