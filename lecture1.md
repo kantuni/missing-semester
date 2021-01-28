@@ -98,4 +98,4 @@ ls -l semester
 ./semester | grep "last-modified" | cut -d ' ' -f 2- > ~/last-modified.txt
 ```
 
-Get the header, pluck the "last-modified" line from it, split it on space, take all fields starting from the second one, and write the output of the previous command to `~/last-modified.txt`.
+Get the request header, pluck the "last-modified" line from it, split it on space, take all fields starting from the second one, and write the output of the previous command to `~/last-modified.txt`.
