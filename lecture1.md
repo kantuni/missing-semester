@@ -91,3 +91,11 @@ ls -l semester
 `#!/bin/sh` (shebang line) tells the shell to interpret the script using `sh`.
 
 <br />
+
+> 10\. Use `|` and `>` to write the "last modified" date output by `semester` into a file called `last-modified.txt` in your home directory.
+
+```bash
+./semester | grep "last-modified" | cut -d ' ' -f 2- > last-modified.txt
+```
+
+Get the header, pluck the "last-modified" line from it, split it on space, and take all fields starting from the second one.
