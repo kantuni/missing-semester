@@ -9,7 +9,7 @@ cd /tmp
 mkdir missing
 ```
 
-> 3. Look up the `touch` program. The `man` program is your friend.
+> 3\. Look up the `touch` program. The `man` program is your friend.
 
 ```bash
 man touch
@@ -17,14 +17,14 @@ man touch
 
 The `touch` utility sets the modification and access times of files.  If any file does not exist, it is created with default permissions.
 
-> 4. Use `touch` to create a new file called `semester` in `missing`.
+> 4\. Use `touch` to create a new file called `semester` in `missing`.
 
 ```bash
 cd missing
 touch semester
 ```
 
-> 5. Write the following into that file, one line at a time:
+> 5\. Write the following into that file, one line at a time:
 
 ```bash
 #!/bin/sh  
@@ -42,7 +42,7 @@ Double quotes won't work in the first example, because of the `!`.
 From the [bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Double-Quotes):
 > Enclosing characters in double quotes preserves the literal value of all characters within the quotes, with the exception of `$`, `` ` ``, `\`, and, when history expansion is enabled, `!`.
 
-> 6. Try to execute the file, i.e. type the path to the script (`./semester`) into your shell and press enter. Understand why it doesn’t work by consulting the output of `ls` (hint: look at the permission bits of the file).
+> 6\. Try to execute the file, i.e. type the path to the script (`./semester`) into your shell and press enter. Understand why it doesn’t work by consulting the output of `ls` (hint: look at the permission bits of the file).
 
 ```bash
 ./semester
