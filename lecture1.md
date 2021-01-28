@@ -8,3 +8,9 @@
 cd /tmp
 mkdir missing
 ```
+
+3. Look up the `touch` program. The `man` program is your friend.
+
+```bash
+man touch
+```
