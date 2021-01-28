@@ -15,6 +15,8 @@ mkdir missing
 man touch
 ```
 
+The `touch` utility sets the modification and access times of files.  If any file does not exist, it is created with default permissions.
+
 4. Use `touch` to create a new file called `semester` in `missing`.
 
 ```bash
