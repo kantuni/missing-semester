@@ -30,7 +30,10 @@ curl --head --silent https://missing.csail.mit.edu
 ```
 
 ```bash
-# Double quotes won't work
 echo '#!/bin/sh' > semester
 echo "curl --head --silent https://missing.csail.mit.edu" >> semester
 ```
+
+Double quotes won't work in the first example, because of the `!`.  
+From the [bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Double-Quotes):
+> Enclosing characters in double quotes preserves the literal value of all characters within the quotes, with the exception of `$`, `` ` ``, `\`, and, when history expansion is enabled, `!`.
