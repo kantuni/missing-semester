@@ -1,4 +1,5 @@
-# [Lecture 1](https://missing.csail.mit.edu/2020/course-shell/)
+# Lecture 1
+https://missing.csail.mit.edu/2020/course-shell/
 
 ## Exercises
 
