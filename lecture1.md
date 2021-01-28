@@ -47,7 +47,7 @@ echo "curl --head --silent https://missing.csail.mit.edu" >> semester
 From the [bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Double-Quotes):
 > Enclosing characters in double quotes preserves the literal value of all characters within the quotes, with the exception of `$`, `` ` ``, `\`, and, when history expansion is enabled, `!`.
 
-**NOTE:** Use single quotes if there is a `!` inside of a string.
+**NOTE:** Use single quotes if there are `$`, `` ` ``, `\`, or `!` inside of a string.
 
 <br />
 
