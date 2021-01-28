@@ -49,3 +49,4 @@ From the [bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/ma
 ls -l
 # -rw-r--r--  1 henrikh  wheel  61 Jan 28 12:53 semester
 ```
+The `x` (execute) bits are missing.
