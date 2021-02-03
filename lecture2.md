@@ -82,6 +82,5 @@ while ./fail.sh >> stdout.txt 2>> stderr.txt; do
 done
 
 echo "Iterations before failure: $i"
-cat stdout.txt
-cat stderr.txt
+cat stdout.txt stderr.txt
 ```
