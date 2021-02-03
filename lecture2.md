@@ -40,7 +40,7 @@ For ease of debugging you can write the code in a file `marco.sh` and (re)load t
 by executing `source marco.sh`.
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 
 marco() {
   MARCO_DIR=$(pwd)
