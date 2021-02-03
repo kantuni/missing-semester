@@ -77,12 +77,11 @@ how many runs it took for the script to fail.
 #!/usr/bin/env bash
 
 i=1
-while [[ $? -eq 0 ]]; do
+while ./fail.sh >> stdout.txt 2>> stderr.txt; do
   i=$((i+1))
-  ./fail.sh >> stdout.txt 2>> stderr.txt
 done
 
-echo "# of iterations before failure: $i"
+echo "Iterations before failure: $i"
 
 echo "STDOUT"
 cat stdout.txt
