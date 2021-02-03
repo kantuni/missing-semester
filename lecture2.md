@@ -11,7 +11,7 @@ https://missing.csail.mit.edu/2020/shell-tools/
 > - Files are ordered by recency
 > - Output is colorized
 > 
-> A sample output would look like this
+> A sample output would look like this:
 
 ```
  -rw-r--r--   1 user group 1.1M Jan 14 09:53 baz
