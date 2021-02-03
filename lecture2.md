@@ -22,15 +22,13 @@ https://missing.csail.mit.edu/2020/shell-tools/
 ```
 
 ```bash
-ls -ahltG
+ls -Gahlt
 ```
 
-- `-a` - Include directory entries whose names begin with a dot (`.`).
-- `-h` - When used with the `-l` option, use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte,
-Terabyte and Petabyte in order to reduce the number of digits to three or less using base 2 for sizes.
+- `-G` - Enable colorized output.
+- `-a` - Include all files, including hidden files.
+- `-h` - List sizes in human readable format (e.g. 454M instead of 454279954).
 - `-l` - List in long format.
-- `-t` - Sort by time modified (most recently modified first) before sorting 
-the operands by lexicographical order.
-- `-G` - Enable colorized output.  This option is equivalent to defining CLICOLOR in the environment.
+- `-t` - Sort files by recency.
 
 <br />
