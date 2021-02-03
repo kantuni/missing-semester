@@ -28,7 +28,7 @@ ls -Gahlt
 - `-G` - Enable colorized output.
 - `-a` - Include all files, including hidden files.
 - `-h` - List sizes in human readable format (e.g. 454M instead of 454279954).
-- `-l` - List in long format.
+- `-l` - List in long format (show permissions, ownership, size, and modification date).
 - `-t` - Sort files by recency.
 
 <br />
