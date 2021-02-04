@@ -84,3 +84,29 @@ done
 echo "Iterations before failure: $i"
 cat stdout.txt stderr.txt
 ```
+
+<br />
+
+> 4\. As we covered in the lecture `find`’s `-exec` can be very powerful for performing operations over the files
+we are searching for. However, what if we want to do something with all the files, like creating a zip file? 
+As you have seen so far commands will take input from both arguments and STDIN. When piping commands, we are 
+connecting STDOUT to STDIN, but some commands like `tar` take inputs from arguments. To bridge this disconnect 
+there’s the `xargs` command which will execute a command using STDIN as arguments. For example `ls | xargs rm` will 
+delete the files in the current directory.
+>
+> Your task is to write a command that recursively finds all HTML files in the folder and makes a zip with them. 
+Note that your command should work even if the files have spaces (hint: check `-d` flag for `xargs`).
+>
+> If you’re on macOS, note that the default BSD find is different from the one included in GNU coreutils. 
+You can use `-print0` on find and the `-0` flag on xargs. As a macOS user, you should be aware that command-line 
+utilities shipped with macOS may differ from the GNU counterparts; you can install the GNU versions if you like by using brew.
+
+```bash
+find . -name "*.html" -type f -print0 | xargs -0 tar cf html.tar
+```
+
+- `-name` - Pattern match on the path[name].
+- `-type f` - Find [f]iles, not directories.
+- `-print0` - [print] the pathname of the current file to STDOUT, followed by an ASCII NULL character (character code [0]).
+- `-0` - Split on a NULL (character code [0]) character instead of a space.
+- `cf` - [c]reate an archive from [f]iles.
