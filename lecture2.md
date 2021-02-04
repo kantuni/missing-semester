@@ -106,7 +106,7 @@ find . -name "*.html" -type f -print0 | xargs -0 tar cf html.tar
 ```
 
 - `-name` - Pattern match on the pathname.
-- `-type f` - Find files, ignore directories.
+- `-type f` - Filter by type: file (f), directory (d), symlink (l), executable (x), empty (e), socket (s), pipe (p).
 - `-print0` - Print the pathname of the current file to STDOUT, followed by an ASCII NULL character (character code 0).
 - `-0` - Split on a NULL character (character code 0) instead of a space.
 - `cf` - [c]reate an archive from [f]iles.
