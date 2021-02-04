@@ -102,7 +102,7 @@ You can use `-print0` on find and the `-0` flag on xargs. As a macOS user, you s
 utilities shipped with macOS may differ from the GNU counterparts; you can install the GNU versions if you like by using brew.
 
 ```bash
-find . -name "*.html" -type f -print0 | xargs -0 tar cf html.tar
+find . -name "*.html" -type f -print0 | xargs -0 tar -cf html.tar
 ```
 
 - `-name` - Pattern match on the pathname.
