@@ -148,5 +148,4 @@ lru() {
 
 **`cut`**
 - `-d delim` - Use delim as the field delimiter character instead of the tab character.
-- `-f list` - The list specifies fields, separated in the input by the field delimiter character (see the `-d` option.) 
-The list option argument is a comma or whitespace separated set of numbers and/or number ranges.
+- `-f list` - The list specifies fields, separated in the input by the field delimiter character (see the `-d` option.) The list option argument is a comma or whitespace separated set of numbers and/or number ranges. Number ranges consist of a number, a dash (`-`), and a second number and select the fields or columns from the first number to the second, inclusive.
