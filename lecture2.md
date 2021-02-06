@@ -105,13 +105,13 @@ utilities shipped with macOS may differ from the GNU counterparts; you can insta
 find . -name "*.html" -type f -print0 | xargs -0 tar -cf html.tar
 ```
 
-*find*
+`find`
 - `-name` - Pattern match on the pathname.
-- `-type f` - Filter by type: file (f), directory (d), symlink (l), executable (x), empty (e), socket (s), pipe (p).
+- `-type` - Filter by type: file (f), directory (d), symlink (l), executable (x), empty (e), socket (s), pipe (p).
 - `-print0` - Print the pathname of the current file to STDOUT, followed by an ASCII NULL character (character code 0).
 
-*xargs*
+`xargs`
 - `-0` - Split on a NULL character (character code 0) instead of a space.
 
-*tar*
+`tar`
 - `-cf` - [c]reate an archive from [f]iles.
