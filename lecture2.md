@@ -116,3 +116,36 @@ find . -name "*.html" -type f -print0 | xargs -0 tar -cf html.tar
 
 **`tar`**
 - `-cf` - [c]reate an archive from [f]iles.
+
+<br />
+
+
+> 5\.(Advanced) Write a command or script to recursively find the most recently modified file in a directory. 
+More generally, can you list all files by recency?
+
+```bash
+#!/usr/bin/env bash
+
+lru() {
+  find "$1" -type f -print0 | xargs -0 stat -f '%m %N'| sort | cut -d' ' -f2-
+}
+```
+
+**`bash`**
+- `$1` - First argument of the function.
+
+**`find`**
+- `-type` - Filter by type: file (f), directory (d), symlink (l), executable (x), empty (e), socket (s), pipe (p).
+- `-print0` - Print the pathname of the current file to STDOUT, followed by an ASCII NULL character (character code 0).
+
+**`xargs`**
+- `-0` - Split on a NULL character (character code 0) instead of a space.
+
+**`stat`**
+- `f` - Display information using the specified format. 
+  - `%m` - file modification time in POSIX.
+  - `%N` - file name.
+
+**`cut`**
+- `-d delim` - Use delim as the field delimiter character instead of the tab character.
+- `-f list` - The list specifies fields, separated in the input by the field delimiter character (see the `-d` option.)
