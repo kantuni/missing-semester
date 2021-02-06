@@ -25,6 +25,7 @@ https://missing.csail.mit.edu/2020/shell-tools/
 ls -Gahlt
 ```
 
+**`ls`**
 - `-G` - Enable colorized output.
 - `-a` - Include all files, including hidden files.
 - `-h` - List sizes in human readable format (e.g. 454M instead of 454279954).
