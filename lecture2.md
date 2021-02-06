@@ -120,7 +120,7 @@ find . -name "*.html" -type f -print0 | xargs -0 tar -cf html.tar
 <br />
 
 
-> 5\.(Advanced) Write a command or script to recursively find the most recently modified file in a directory. 
+> 5\. (Advanced) Write a command or script to recursively find the most recently modified file in a directory. 
 More generally, can you list all files by recency?
 
 ```bash
