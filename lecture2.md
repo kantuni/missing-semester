@@ -142,7 +142,7 @@ lru() {
 - `-0` - Split on a NULL character (character code 0) instead of a space.
 
 **`stat`**
-- `f` - Display information using the specified format. 
+- `-f` - Display information using the specified format. 
   - `%m` - file modification time in POSIX.
   - `%N` - file name.
 
